@@ -99,21 +99,17 @@ JS.scripts.prototype = {
     {
       $(".fadein").each(function() 
       {
-        if(isScrolledIntoView(this) && $(this).css('display')!='none')
+        var docViewTop = $(document).scrollTop();
+        var docViewBottom = docViewTop + $(document).height();
+        var elemTop = $(this).offset().top;
+        var elemBottom = elemTop + $(this).height();
+        if((elemTop <= docViewBottom-elemBottom+500) && $(this).css('display')!='none')
         {
           $(this).css('opacity', '0');
           $(this).fadeTo(1500,1);
         }
       })
     })
-    function isScrolledIntoView(elem)
-    {
-      var docViewTop = $(document).scrollTop();
-      var docViewBottom = docViewTop + $(document).height();
-      var elemTop = $(elem).offset().top;
-      var elemBottom = elemTop + $(elem).height();
-      return (elemTop <= docViewBottom-elemBottom+500)
-    }
   },
   commentModalShow:function(){
     $('#commentModalButton').click(function(){
