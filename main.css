@@ -1,0 +1,492 @@
+*
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Arial,"Helvetica Neue",Helvetica,sans-serif
+}
+
+#light
+{
+  background-image: url('images/light.png');
+  background-repeat: no-repeat;
+  z-index: -100;
+  position: absolute;
+  display: none;
+  height: 200px;
+  width: 100%;
+}
+
+#switch img
+{
+
+}
+
+.fadein
+{
+  opacity: 0;
+}
+
+.transition
+{
+  display: none;
+}
+
+.container
+{
+  width: 100%;
+  min-height: 100%;
+}
+
+.header
+{
+  padding: 48px 48px 8px 48px;
+  font-size: 64px;
+  height: 2.5em;
+}
+
+.logo
+{
+  color: #4A78BF;
+}
+
+.links
+{
+  font-size: 32px;
+  float: right; 
+  color: lightgrey;
+  text-decoration: none;  
+  padding: 7px;
+}
+
+.header .left
+{
+  float: left;
+}
+
+.header .right
+{
+  float: right;
+}
+
+.links:hover
+{
+  color: grey;
+}
+
+.navbar
+{
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+}
+
+.navbar ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.navbar-sm 
+{
+  display: none;
+}
+
+.navbar-sm ul li
+{
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.navbar .right
+{
+  float: right;
+}
+
+.navbar li 
+{
+  float: left;
+}
+
+.navbar li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover 
+{
+  background-color: #4A78BF;
+  cursor: pointer;
+}
+
+input[type=search] 
+{
+  width: 130px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type=submit] 
+{
+  width: 130px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type=email],input[type=text] 
+{
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 7px;
+  margin: 7px;
+}
+
+textarea 
+{
+  width: 100%;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 7px;
+  margin: 7px;
+  resize: none;
+}
+
+.carousal
+{
+  background-color: #F8F8F8;
+  text-align: center;
+  height: 20em;
+}
+
+.carousal .slider
+{
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buttons
+{
+  font-size: 32px;
+  z-index: 500;
+  color: grey;
+  position: relative;
+}
+
+.buttons a:hover
+{
+  text-decoration: none;
+}
+
+.buttons:hover
+{
+  cursor: pointer;
+  color: black;
+}
+
+#next
+{
+  position: absolute;
+  right: 10%;
+  margin: 10% auto; 
+}
+
+#previous
+{
+  position: absolute;
+  left: 10%;
+  margin: 10% auto; 
+}
+
+.btn 
+{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-blue 
+{
+  background-color: #4A78BF;
+  color: white;
+  border: 2px solid #4A78BF;
+}
+
+.btn-blue:hover 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4A78BF;
+}
+
+.btn-black 
+{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.btn-black:hover 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.grid
+{
+  padding: 50px;
+  width: 100%;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] 
+{
+  float: left;
+}
+
+.sidenav 
+{
+  margin: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.sidenav ul
+{
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidenav li a 
+{
+  display: block;
+  color: #000;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sidenav li a:hover 
+{
+  background-color: #4A78BF;
+  color: white;
+}
+
+.padding
+{
+  padding: 1.8em;
+}
+
+p
+{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+hr
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+.img 
+{
+  max-width: 100%;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pagination a 
+{
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active 
+{
+  background-color: #4A78BF;
+  color: white;
+}
+
+.pagination a:hover:not(.active) 
+{
+  background-color: #ddd;
+}
+
+.wrapper 
+{
+  position:relative;
+  width:100%;
+  padding-bottom:14%;
+  overflow:hidden;
+}
+
+.footer 
+{
+  position:absolute;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content 
+{
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close 
+{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus 
+{
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 874px) 
+{
+  [class*="col-"] 
+  {
+    width: 100%; 
+  }
+  .navbar 
+  { 
+    display: none; 
+  }
+  .navbar-sm .collapse 
+  { 
+    display: none; 
+  }
+  .navbar-sm 
+  { 
+    display: block; 
+  }
+  h1 
+  { 
+    font-size: 22px !important; 
+  }
+  .padding 
+  { 
+    padding: 0.4em; 
+  }
+  p
+  {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .btn
+  {
+    font-size: 10px;
+  }
+  .header
+  {
+    padding: 4px 24px 4px 24px;
+    font-size: 32px;
+    height: 2em;
+  }
+  .links 
+  { 
+    font-size: 24px; 
+  }
+  .carousal 
+  { 
+    height: 10em; 
+  }
+  h1 
+  { 
+    font-size: 1.5em; 
+  }
+  h2 
+  { 
+    font-size: 1em; 
+  }
+  .footer [class*="col-"] 
+  { 
+    border-bottom: 1px solid white; 
+  }
+  .buttons
+  {
+    font-size: 24px;
+  }
+  #next
+  {
+    margin-top: 20% auto; 
+  }
+  #previous
+  {
+    margin-top: 20% auto; 
+  }
+}
